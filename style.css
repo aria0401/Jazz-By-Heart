@@ -1,0 +1,455 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #d99236;
+    /*    background-image: linear-gradient(180deg, rgba(255, 255, 255, 1) 36%, rgba(217, 146, 54, 1) 37.5%);*/
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin: 0;
+    color: #ebebeb;
+}
+
+img {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+audio {
+    filter: invert(90%);
+    height: 2rem;
+}
+
+
+
+
+h1,
+h2,
+h3 {
+
+    font-family: 'Yeseva One', cursive;
+    font-weight: 100;
+
+}
+
+p {
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    line-height: 1.7rem;
+
+}
+
+a,
+button {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+
+}
+
+
+
+.content_wrap {
+    max-width: 1200px;
+    padding: 6vw;
+}
+
+.logo {
+    width: 70%;
+}
+
+.splash_img {
+    filter: grayscale(100%);
+}
+
+.red_container {
+    background-color: #842a31;
+    transform: skewY(6deg);
+    -ms-transform: skewY(6deg);
+    -webkit-transform: skewY(6deg);
+    margin-top: -6vh;
+}
+
+.black_container {
+    background-color: #19191a;
+    transform: skewY(6deg);
+    -ms-transform: skewY(6deg);
+    -webkit-transform: skewY(6deg);
+    margin-top: -6vh;
+}
+
+.notskew {
+    transform: skewY(-6deg);
+    -ms-transform: skewY(-6deg);
+    -webkit-transform: skewY(-6deg);
+}
+
+
+
+/*------header--------------*/
+
+
+
+header {
+
+    position: fixed;
+    background-image: linear-gradient(black, rgba(255, 255, 255, 0));
+    height: 10rem;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 7rem;
+    position: relative;
+    top: 1rem;
+    left: .5rem;
+}
+
+/*--- Her er burgermenu synlig og desktop menu hidden - ændres i mediaquery 600px -*/
+
+.burgermenu_visibility {
+    visibility: visible;
+}
+
+.desktopmenu_visibility {
+    visibility: hidden;
+}
+
+/*--------- DESKTOP nav-----------*/
+
+#desktop_menu .selected {
+    border-top: solid 2rem #D99236;
+    position: relative;
+    top: -3.5rem;
+    padding-top: 1.5rem;
+}
+
+#desktop_menu {
+    display: flex;
+    flex-direction: row;
+    right: 5vw;
+    top: 5vh;
+    position: fixed;
+}
+
+#desktop_menu a {
+    text-decoration-line: none;
+    list-style-type: none;
+    font-size: 1.2rem;
+    margin-right: 3vw;
+    display: flex;
+    font-family: 'Yeseva One', cursive;
+    font-weight: 100;
+    color: white;
+}
+
+/*--------- BURGER nav-----------*/
+
+
+
+#burgermenu .selected {
+    border-right: solid 2rem #D99236;
+    position: relative;
+    right: -2rem;
+}
+
+#burgermenu a {
+    margin: 2rem;
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Yeseva One', cursive;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+
+
+/*til at gemme bacggrunden af burgermenu*/
+
+.hidden {
+    visibility: hidden;
+}
+
+
+#burgermenu_knap {
+    position: fixed;
+    height: 3rem;
+    width: 3rem;
+    background-image: url(static_img/burger_open.svg);
+    background-size: cover;
+    top: 4vw;
+    right: 4vw;
+    z-index: 1;
+    cursor: pointer;
+    filter: grayscale(0);
+}
+
+
+
+
+
+#burgermenu_background {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    top: 0vw;
+    right: 0vw;
+    height: 100vh;
+    width: 100vw;
+    padding-top: 10vw;
+    position: fixed;
+}
+
+#burgermenu a {
+    padding-right: 3vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/*-----------  Burgermenu animation     --------*/
+
+
+
+.closed {
+    animation-name: close_kf;
+    animation-duration: 0s;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+}
+
+
+
+@keyframes close_kf {
+    0% {
+        background-image: url(static_img/burger_close.svg);
+    }
+
+    100% {
+        background-image: url(static_img/burger_open.svg);
+    }
+}
+
+
+.open {
+    animation-name: open_kf;
+    animation-duration: 0s;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+}
+
+@keyframes open_kf {
+    100% {
+        background-image: url(static_img/burger_close.svg);
+    }
+}
+
+
+/*------header slut--------*/
+
+
+/*---------footer-------*/
+
+footer {
+    width: 90vw;
+    height: 52vh;
+    position: relative;
+    bottom: 0;
+
+}
+
+.footer_txt {
+    padding: 2rem;
+    padding-bottom: 0;
+}
+
+
+/*---------footer slut-------*/
+
+
+
+
+
+/*---------------------------MEDIA QUERY 360px-----------------------*/
+
+
+
+@media only screen and (min-width: 360px) {}
+
+/*---------------------------MEDIA QUERY 375px-----------------------*/
+
+
+@media only screen and (min-width: 375px) {}
+
+/*---------------------------MEDIA QUERY 414px-----------------------*/
+
+@media only screen and (min-width: 414px) {}
+
+/*---------------------------MEDIA QUERY 600px-----------------------*/
+@media only screen and (min-width: 600px) {
+
+
+    /*-----------NAV------*/
+
+    .burgermenu_visibility {
+        visibility: hidden;
+    }
+
+    .desktopmenu_visibility {
+        visibility: visible;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+
+    .splash_img {
+        width: 100%;
+        margin-left: 0vw;
+    }
+
+
+    footer {
+
+        margin-left: 4vw;
+    }
+}
+
+/*---------------------------MEDIA QUERY 760px-----------------------*/
+@media only screen and (min-width: 760px) {
+    footer {
+        height: 40vh;
+    }
+}
+
+
+
+/*---------------------------MEDIA QUERY 900px-----------------------*/
+
+@media only screen and (min-width: 900px) {
+
+    .red_container {
+        margin-top: -12vh;
+    }
+
+    .content_wrap {
+        padding: 6vw;
+
+    }
+}
+
+/*---------------------------MEDIA QUERY 1000px-----------------------*/
+
+@media only screen and (min-width: 1000px) {
+    .logo {
+        width: 114%;
+        margin-left: 4vw;
+    }
+
+
+}
+
+
+/*---------------------------MEDIA QUERY 1100px-----------------------*/
+
+@media only screen and (min-width: 1100px) {
+
+
+    footer {
+        margin-left: 8vw;
+    }
+}
+
+
+/*---------------------------MEDIA QUERY 1200px-----------------------*/
+
+@media only screen and (min-width: 1200px) {
+
+
+    footer {
+        margin-left: 8vw;
+    }
+
+}
+
+/*---------------------------MEDIA QUERY 1300px-----------------------*/
+
+@media only screen and (min-width: 1300px) {
+
+    .content_wrap {
+        margin-left: 7vw;
+        padding-bottom: 8vh;
+    }
+
+    .red_container {
+        margin-top: -28vh;
+    }
+
+
+    footer {
+        height: 46vh;
+        margin-left: 11vw;
+    }
+}
+
+/*---------------------------MEDIA QUERY 1400px-----------------------*/
+
+@media only screen and (min-width: 1400px) {
+
+    .content_wrap {
+        margin-left: 8vw;
+    }
+
+    .red_container {
+        margin-top: -36vh;
+    }
+
+    footer {
+        margin-left: 14vw;
+    }
+
+}
+
+/*---------------------------MEDIA QUERY 1500px-----------------------*/
+
+@media only screen and (min-width: 1500px) {
+
+    .red_container {
+        margin-top: -36vh;
+    }
+
+    .content_wrap {
+        margin-left: 10vw;
+    }
+
+
+    footer {
+        margin-left: 16vw;
+    }
+
+}
+
+/*---------------------------MEDIA QUERY 1600px-----------------------*/
+
+@media only screen and (min-width: 1600px) {
+
+    .red_container {
+        margin-top: -40vh;
+    }
+
+    .content_wrap {
+        margin-left: 12vw;
+    }
+
+
+    footer {
+        margin-left: 18vw;
+    }
+}

@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jazz By Heart | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vocal jazz, Country jazz, Experimental jazz. Jazz for the senses, the traditional, and the daring. Jazz By Heart is a duo who dare to span many genres.">
+    <meta name="keywords" content="Vocal jazz, Country jazz, Experimental jazz">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,500;0,600;1,200&family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="JBH-favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="JBH-favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="JBH-favicon/favicon-16x16.png">
+    <link rel="manifest" href="JBH-favicon/site.webmanifest">
+    <link rel="mask-icon" href="JBH-favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="JBH-favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="JBH-favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" async></script>
+
+    <style>
+        .album_header_desktop {
+            display: none;
+        }
+
+        .album_header_mobil {
+            margin-left: 18vw;
+        }
+
+        .album_preview {
+            margin-bottom: 6vh;
+        }
+
+        .call_to_action {
+            padding: 1vw;
+            padding-left: 2vw;
+            margin-left: 24vw;
+            margin-bottom: 10vh;
+            cursor: pointer;
+        }
+
+        span {
+            margin-left: 1vw;
+        }
+
+        .album_preview img {
+            float: left;
+            margin-right: 4vw;
+            width: 40%;
+            padding-top: 2vw;
+        }
+
+        .songs {
+            display: flex;
+            flex-wrap: wrap;
+            padding-bottom: 4vh;
+        }
+
+        .songs h3 {
+            padding-bottom: 1vh;
+        }
+
+        .album_col {
+            flex-basis: 300px;
+            flex-grow: 1;
+        }
+
+
+
+        audio {
+            width: 80vw;
+            margin-bottom: 2vh;
+            margin-top: -2vh;
+        }
+
+
+        .container {
+            margin-top: -2vh;
+            display: none;
+        }
+
+        .song_container h3 {
+            padding-bottom: 1vh;
+        }
+
+
+
+        .song_wrap {
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            flex-wrap: wrap;
+            margin-bottom: 10vh;
+            width: 90vw;
+        }
+
+        .song_list {
+            display: flex;
+            flex-wrap: wrap;
+            /*
+            align-self: center;
+            justify-content: center;
+*/
+        }
+
+        .song_name,
+        .song1,
+        .song2 {
+            margin-left: 2vw;
+        }
+
+
+        .projects_container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .projects_header {
+            border-bottom: 2px solid #d99236;
+            padding-top: 8vh;
+            width: 58vw;
+            margin-bottom: 6vh;
+            margin-left: 24vw;
+        }
+
+        .project {
+            flex-basis: 300px;
+            flex-grow: 1;
+            margin-bottom: 10vh;
+        }
+
+        .project img {
+            border-radius: 50%;
+            width: 90%;
+            margin-left: 4vw;
+        }
+
+        .project_header_1,
+        .project_header_2 {
+            margin-left: 24vw;
+        }
+
+        .project_header_3 {
+            margin-left: 12vw;
+        }
+
+        /*---------------------------MEDIA QUERY 360px-----------------------*/
+
+        @media only screen and (min-width: 360px) {
+            .projects_header {
+                width: 52vw;
+            }
+        }
+
+        /*---------------------------MEDIA QUERY 375px-----------------------*/
+
+
+        @media only screen and (min-width: 375px) {
+            .projects_header {
+                width: 50vw;
+            }
+
+            .call_to_action {
+                padding-left: 3vw;
+            }
+        }
+
+        /*---------------------------MEDIA QUERY 414px-----------------------*/
+
+        @media only screen and (min-width: 414px) {
+            .projects_header {
+                width: 44vw;
+            }
+
+
+        }
+
+
+        /*---------------------------MEDIA QUERY 600px-----------------------*/
+
+        @media only screen and (min-width: 600px) {
+
+
+            h1,
+            h2 {
+                margin-left: 0vw;
+            }
+
+
+            audio {
+                width: 42vw;
+                margin-bottom: 1vh;
+                margin-top: -1vh;
+            }
+
+            article:nth-child(2n) {
+                margin-left: 2vw;
+            }
+
+
+            .album_header_mobil {
+                display: none;
+            }
+
+            .album_header_desktop {
+                display: block;
+            }
+
+            .album_preview {
+                margin-bottom: 8vh;
+            }
+
+            .album_col img {
+                padding: 2vw;
+            }
+
+            .container {
+                margin-top: -4vh;
+            }
+
+            .songs {
+                padding-bottom: 4vh;
+            }
+
+
+            .black_container {
+                margin-top: -4vh;
+            }
+
+            .project {
+                padding: 2vw;
+            }
+
+            .projects_header {
+                width: 24vw;
+                margin-left: 38vw;
+                padding-top: 5vh;
+                margin-bottom: 2vh;
+            }
+
+
+            .project_header_1,
+            .project_header_2 {
+                margin-left: 12vw;
+            }
+
+            .col2 {
+                margin-top: -2vh;
+                margin-left: 4vw;
+            }
+
+            .call_to_action {
+                margin-left: 50vw;
+            }
+
+        }
+
+
+
+        /*---------------------------MEDIA QUERY 760px-----------------------*/
+
+        @media only screen and (min-width: 760px) {
+            .call_to_action {
+                margin-left: 50vw;
+                margin-top: -2vh;
+                margin-bottom: 6vh;
+            }
+
+            article:nth-child(2n) {
+                margin-left: 4vw;
+            }
+        }
+
+
+        /*---------------------------MEDIA QUERY 900px-----------------------*/
+
+        @media only screen and (min-width: 900px) {
+            .album_preview {
+                margin-bottom: 12vh;
+            }
+
+            .album_preview img {
+                padding-top: 0vw;
+            }
+
+
+            .songs {
+                width: 90vw;
+            }
+
+
+            .projects_header {
+                width: 21vw;
+            }
+
+
+            .col2 {
+                margin-top: 0vh;
+
+            }
+
+
+            .call_to_action {
+                margin-left: 60vw;
+            }
+
+
+
+
+        }
+
+        /*---------------------------MEDIA QUERY 1000px-----------------------*/
+
+        @media only screen and (min-width: 1000px) {
+
+
+            .album_preview {
+                margin-bottom: 2vh;
+                margin-left: 4vw;
+                margin-right: 4vw;
+            }
+
+            .projects_header {
+                width: 19vw;
+            }
+
+            .songs {
+                margin-top: 20vh;
+                margin-left: 4vw;
+            }
+
+            .container {
+                margin-top: -4vh;
+                margin-left: 4vw;
+
+            }
+
+
+            audio {
+                width: 36vw;
+            }
+
+            article:nth-child(2n) {
+                margin-left: 8vw;
+            }
+
+            .projects_container {
+                margin-left: 2vw;
+                margin-right: 2vw;
+            }
+
+            .project img {
+                margin-left: 2vw;
+            }
+        }
+
+        /*---------------------------MEDIA QUERY 1100px-----------------------*/
+
+        @media only screen and (min-width: 1100px) {
+
+
+            .album_preview img {
+                width: 30%;
+
+            }
+
+            .album_preview {
+                margin-bottom: -10vh;
+                margin-top: 6vh;
+            }
+
+            .songs {
+                margin-top: 28vh;
+            }
+
+            .call_to_action {
+                font-size: 1.2rem;
+            }
+
+            .cta_songs {
+                margin-top: 2vh;
+            }
+
+            .cta_projects {
+                margin-top: -8vh;
+            }
+
+            .projects_header {
+                width: 17vw;
+                margin-left: 44vw;
+                padding-top: 10vh;
+            }
+
+            .project_header_1,
+            .project_header_2 {
+                margin-left: 14vw;
+            }
+
+            .project img {
+                margin-left: 4vw;
+            }
+
+            .projects_container {
+                margin-left: 4vw;
+            }
+
+
+
+        }
+
+        /*---------------------------MEDIA QUERY 1200px-----------------------*/
+
+        @media only screen and (min-width: 1200px) {
+
+            audio {
+                width: 30vw;
+            }
+
+            .songs,
+            .container {
+                margin-left: 10vw;
+
+            }
+
+            .projects_header {
+                width: 16vw;
+                margin-left: 44vw;
+                padding-top: 9vh;
+            }
+
+
+            .project_header_1,
+            .project_header_2 {
+                margin-left: 10vw;
+            }
+
+            .project img {
+                width: 80%;
+                margin-left: 2vw;
+            }
+
+            .projects_container {
+                margin-left: 6vw;
+            }
+
+            .call_to_action {
+                margin-left: 54vw;
+            }
+
+
+        }
+
+        /*---------------------------MEDIA QUERY 1300px-----------------------*/
+
+        @media only screen and (min-width: 1300px) {
+
+            .album_preview {
+                margin-left: 1vw;
+                margin-right: 6vw;
+            }
+
+
+            .album_preview img {
+                width: 34%;
+            }
+
+            .call_to_action {
+                margin-left: 50vw;
+            }
+
+            .songs,
+            .container {
+                margin-left: 4vw;
+            }
+
+            .projects_container {
+                margin-left: 6vw;
+            }
+
+            .projects_header {
+                width: 14vw;
+            }
+
+            .project_header_1,
+            .project_header_2 {
+                margin-left: 12vw;
+            }
+
+            .project img {
+                width: 80%;
+                margin-bottom: 4vh;
+            }
+
+
+        }
+
+        /*---------------------------MEDIA QUERY 1400px-----------------------*/
+
+        @media only screen and (min-width: 1400px) {
+
+            .songs,
+            .container {
+                margin-left: 1vw;
+            }
+
+            .projects_container {
+                margin-left: 8vw;
+                margin-top: -4vh;
+            }
+
+            .projects_header {
+                width: 13vw;
+            }
+
+            .project_header_1,
+            .project_header_2 {
+                margin-left: 10vw;
+            }
+
+            .col2 {
+                margin-top: 0vh;
+            }
+
+            .project img {
+                margin-bottom: 4vh;
+            }
+        }
+
+        /*---------------------------MEDIA QUERY 1500px-----------------------*/
+
+        @media only screen and (min-width: 1500px) {
+
+            .album_preview {
+                margin-left: 2vw;
+                margin-right: -2vw;
+
+            }
+
+            .album_header_desktop,
+            .album_txt {
+                margin-left: 30vw;
+            }
+
+            .songs,
+            .container {
+                margin-left: 2vw;
+            }
+
+            .songs {
+                margin-top: 36vh;
+            }
+
+            article:nth-child(2n) {
+                margin-left: 6vw;
+            }
+
+
+            .projects_container {
+                margin-left: 10vw;
+            }
+
+            .project img {
+                width: 90%;
+                margin-left: 2vw;
+            }
+
+            .projects_header {
+                width: 13vw;
+            }
+
+            .project_header_1,
+            .project_header_2 {
+                margin-left: 10vw;
+            }
+
+
+        }
+
+
+        /*---------------------------MEDIA QUERY 1600px-----------------------*/
+
+        @media only screen and (min-width: 1600px) {
+
+            .call_to_action {
+                margin-left: 40vw;
+            }
+
+            .projects_container {
+                margin-left: 12vw;
+            }
+
+            .projects_header {
+                width: 12vw;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <header>
+
+
+
+        <nav>
+            <div id="logo">
+                <a href="index.html"><img src="static_img/logo.svg" title="Forside" alt="logo" class="logo"></a>
+            </div>
+
+
+
+            <div id="burgermenu" class="burgermenu_visibility">
+                <div id="burgermenu_knap"></div>
+                <ul id="burgermenu_background" class="hidden">
+
+                    <a class="selected" href="index.html">Home</a>
+                    <a href="music.html">Music</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="concerts.html">Concerts</a> <a href="about.html">About</a>
+
+                </ul>
+            </div>
+
+            <div id="desktop_menu" class="desktopmenu_visibility">
+
+
+                <a class="selected" href="index.html">Home</a>
+                <a href="music.html">Music</a>
+                <a href="projects.html">Projects</a>
+                <a href="concerts.html">Concerts</a> <a href="about.html">About</a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <section>
+
+        <div class="splash">
+            <img class="splash_img">
+        </div>
+
+
+        <div class="red_container">
+
+            <div class="content_wrap notskew">
+
+                <div class="album_preview">
+
+                    <h1 class="album_header_mobil"></h1>
+                    <img class="album_img">
+
+                    <h1 class="album_header_desktop"></h1>
+                    <p class="album_txt"></p>
+
+                </div>
+
+
+                <div class="songs">
+                    <article class="article_song">
+                        <h3 class="song1"></h3>
+                        <audio controls class="album_song_1"></audio>
+                    </article>
+                    <article class="article_song">
+                        <h3 class="song2"></h3>
+                        <audio controls class="album_song_2"></audio>
+                    </article>
+                </div>
+
+
+
+                <div class="container">
+
+                    <div class="song_wrap">
+
+                        <div class="song_list">
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="call_to_action cta_songs">
+
+                    <a class="CTA_songs">See more songs<span>></span></a>
+                </div>
+
+
+
+
+
+            </div>
+
+        </div>
+
+
+        <div class="black_container">
+
+            <h2 class="projects_header notskew">Music Projects</h2>
+
+            <div class="content_wrap projects_container notskew">
+
+                <div class="project">
+                    <img class="project_img_1">
+                    <h3 class="project_header_1"></h3>
+                    <p class="project_txt_1"></p>
+                </div>
+
+                <div class="project col2">
+                    <img class="project_img_2">
+                    <h3 class="project_header_2"></h3>
+                    <p class="project_txt_2"></p>
+                </div>
+
+                <div class="call_to_action cta_projects"> <a href="projects.html">See Music Projects <span>></span> </a></div>
+
+            </div>
+        </div>
+
+
+
+        <template id="template">
+            <article class="song_container">
+
+                <h3 class="song_name"></h3>
+                <audio controls src="" class="song">
+                </audio>
+
+            </article>
+        </template>
+
+
+    </section>
+
+    <footer>
+        <div class="footer_txt">
+            <h2>Contact</h2>
+            <p><a href="mailto:JazzByHeart@gmail.com">Email: JazzByHeart@gmail.com</a></p>
+            <p>Karin Juhl - Vocal <br>
+                Tel: +45 20108890</p>
+            <p>Daniel Van Kranendonk - Guitar <br>
+                Tel: +45 21248898</p>
+        </div>
+
+
+    </footer>
+
+
+
+
+
+
+
+    <script>
+        let CTASongs = document.querySelector(".CTA_songs");
+        let songsContainer = document.querySelector(".container");
+        let side = [];
+        const URLend = "home?slug=home"
+        const endpoint = `http://ariadna.dk/kea/JazzByHeart/wp/wp-json/wp/v2/${URLend}`;
+        //        const endpoint = `http://yobaba.dk/kea/2sem_eks/jazz_by_heart/wordpress/wp-json/wp/v2/${URLend}`;
+        document.addEventListener("DOMContentLoaded", start);
+
+
+
+        let sideSongs = [];
+        const URLendSongs = "music?per_page=100"
+        const endpointSongs = `http://ariadna.dk/kea/JazzByHeart/wp/wp-json/wp/v2/${URLendSongs}`;
+
+        let filter = "album";
+        const container = document.querySelector(".song_list");
+
+
+
+        function start() {
+            showMoreSongs();
+            hentData();
+            hentDataSongs();
+            console.log("start");
+
+        }
+
+        /************* script der henter wordpress som JSON data ********/
+
+        async function hentData() {
+            const response = await fetch(endpoint);
+            side = await response.json();
+            console.log(side);
+            showElement();
+        }
+
+
+
+        /************* script der vælger hvilke dele af JSON som skal sættes ind i hvilke tags ********/
+
+        function showElement() {
+            side.forEach(element => {
+                document.querySelector(".splash_img").src = element.splash_img.guid;
+                //document.querySelector(".splash").style.backgroundImage.src = element.splash_img.guid;
+                document.querySelector(".album_img").src = element.album_img.guid;
+                document.querySelector(".album_header_mobil").textContent = element.album_header;
+                document.querySelector(".album_header_desktop").textContent = element.album_header;
+                document.querySelector(".album_txt").textContent = element.album_txt;
+
+                document.querySelector(".album_song_1").src = element.album_song_1.guid;
+                document.querySelector(".song1").textContent = element.album_song_1.post_title;
+                document.querySelector(".album_song_2").src = element.album_song_2.guid;
+                document.querySelector(".song2").textContent = element.album_song_2.post_title;
+
+                document.querySelector(".project_img_1").src = element.gw_img.guid;
+                document.querySelector(".project_header_1").textContent = element.project_header_1;
+                document.querySelector(".project_txt_1").textContent = element.project_txt_1;
+
+                document.querySelector(".project_img_2").src = element.xper_img.guid;
+                document.querySelector(".project_header_2").textContent = element.project_header_2;
+                document.querySelector(".project_txt_2").textContent = element.project_txt_2;
+
+            })
+
+        }
+
+
+
+        /******************* script til more songs ******************************/
+
+
+        async function hentDataSongs() {
+            const responseSongs = await fetch(endpointSongs);
+            sideSongs = await responseSongs.json();
+            console.log(sideSongs);
+            showSongs();
+        }
+
+
+
+
+        function showSongs() {
+
+            console.log(sideSongs);
+            container.innerHTML = "";
+            const template = document.querySelector("#template");
+
+            sideSongs.forEach(ting => {
+
+                if (filter == ting.genre) {
+                    const clon = template.cloneNode(true).content;
+                    clon.querySelector(".song_name").textContent = ting.title.rendered;
+                    clon.querySelector(".song").src = ting.song.guid;
+
+
+                    container.appendChild(clon);
+
+
+                }
+            });
+
+        }
+
+
+
+        function showMoreSongs() {
+
+            CTASongs.onclick = () => {
+                songsContainer.style.display = "block";
+                CTASongs.textContent = "See less Songs  >";
+
+                showLessSongs();
+            }
+
+        }
+
+        function showLessSongs() {
+
+            CTASongs.onclick = () => {
+                songsContainer.style.display = "none";
+                CTASongs.textContent = "See more Songs  >";
+
+                showMoreSongs();
+            }
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

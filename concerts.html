@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jazz By Heart | Concerts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vocal jazz, Country jazz, Experimental jazz. Jazz for the senses, the traditional, and the daring. Jazz By Heart is a duo who dare to span many genres.">
+    <meta name="keywords" content="Vocal jazz, Country jazz, Experimental jazz">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,500;0,600;1,200&family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="JBH-favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="JBH-favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="JBH-favicon/favicon-16x16.png">
+    <link rel="manifest" href="JBH-favicon/site.webmanifest">
+    <link rel="mask-icon" href="JBH-favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="JBH-favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="JBH-favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" async></script>
+
+    <style>
+        .upcoming_concerts_container {
+            margin-bottom: 16vh;
+        }
+
+
+        .previous_concerts_container {
+            margin-bottom: 16vh;
+        }
+
+
+        .concert_container {
+            display: grid;
+            grid-gap: 4vw;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .concert_info {
+
+            display: grid;
+            grid-gap: 4vw;
+            grid-template-columns: repeat(3, 1fr);
+            border-bottom: solid 2px #D99236;
+        }
+
+        article {
+            border-bottom: solid 2px #242020;
+        }
+
+        .previous_concerts_container article {
+            border-bottom: solid 2px #ebebeba1;
+        }
+
+
+
+
+        /*---------------------------MEDIA QUERY 360px-----------------------*/
+
+        @media only screen and (min-width: 360px) {}
+
+        /*---------------------------MEDIA QUERY 375px-----------------------*/
+
+
+        @media only screen and (min-width: 375px) {}
+
+        /*---------------------------MEDIA QUERY 414px-----------------------*/
+
+        @media only screen and (min-width: 414px) {}
+
+
+        /*---------------------------MEDIA QUERY 600px-----------------------*/
+
+        @media only screen and (min-width: 600px) {}
+
+
+        /*---------------------------MEDIA QUERY 900px-----------------------*/
+
+        @media only screen and (min-width: 900px) {}
+
+        /*---------------------------MEDIA QUERY 1000px-----------------------*/
+
+        @media only screen and (min-width: 1000px) {
+
+            .upcoming_concerts_container,
+            .previous_concerts_container {
+                margin-left: 4vw;
+                margin-right: 4vw;
+            }
+        }
+
+        /*---------------------------MEDIA QUERY 1100px-----------------------*/
+
+        @media only screen and (min-width: 1100px) {}
+
+        /*---------------------------MEDIA QUERY 1200px-----------------------*/
+
+        @media only screen and (min-width: 1200px) {}
+
+        /*---------------------------MEDIA QUERY 1300px-----------------------*/
+
+        @media only screen and (min-width: 1300px) {
+
+            .content_wrap {
+                margin-left: 4vw;
+            }
+        }
+
+        /*---------------------------MEDIA QUERY 1400px-----------------------*/
+
+        @media only screen and (min-width: 1400px) {}
+
+        /*---------------------------MEDIA QUERY 1500px-----------------------*/
+
+        @media only screen and (min-width: 1500px) {
+            .content_wrap {
+                margin-left: 8vw;
+            }
+        }
+
+
+        /*---------------------------MEDIA QUERY 1600px-----------------------*/
+
+        @media only screen and (min-width: 1600px) {}
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <header>
+
+
+
+        <nav>
+            <div id="logo">
+                <a href="index.html"><img src="static_img/logo.svg" title="Forside" alt="logo" class="logo"></a>
+            </div>
+
+
+
+            <div id="burgermenu" class="burgermenu_visibility">
+                <div id="burgermenu_knap"></div>
+                <ul id="burgermenu_background" class="hidden">
+
+                    <a href="index.html">Home</a>
+                    <a href="music.html">Music</a>
+                    <a href="projects.html">Projects</a>
+                    <a class="selected" href="concerts.html">Concerts</a>
+                    <a href="about.html">About</a>
+
+                </ul>
+            </div>
+
+            <div id="desktop_menu" class="desktopmenu_visibility">
+
+
+                <a href="index.html">Home</a>
+                <a href="music.html">Music</a>
+                <a href="projects.html">Projects</a>
+                <a class="selected" href="concerts.html">Concerts</a>
+                <a href="about.html">About</a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <section>
+
+        <div class="splash">
+            <img class="splash_img">
+        </div>
+
+
+        <div class="red_container">
+
+            <div class="content_wrap notskew">
+
+                <div class="upcoming_concerts_container">
+                    <h1 class="intro_txt"> Upcoming dates</h1>
+                    <div class="concert_info">
+                        <p>Date & time</p>
+                        <p>Name</p>
+                        <p>Place</p>
+                    </div>
+                    <div class="upcoming_concerts">
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="black_container">
+            <div class="content_wrap notskew">
+
+                <div class="previous_concerts_container">
+                    <h1 class="intro_txt"> Previous dates</h1>
+                    <div class="concert_info">
+                        <p>Date & time</p>
+                        <p>Name</p>
+                        <p>Place</p>
+                    </div>
+                    <div class="previous_concerts">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <template id="template">
+            <article class="concert_container">
+
+                <p class="concert_time"></p>
+                <p class="band_name"></p>
+                <p class="concert_place"></p>
+
+            </article>
+
+        </template>
+
+    </section>
+
+    <footer>
+        <div class="footer_txt">
+            <h2>Contact</h2>
+            <p><a href="mailto:JazzByHeart@gmail.com">Email: JazzByHeart@gmail.com</a></p>
+            <p>Karin Juhl - Vocal <br>
+                Tel: +45 20108890</p>
+            <p>Daniel Van Kranendonk - Guitar <br>
+                Tel: +45 21248898</p>
+        </div>
+
+
+    </footer>
+
+
+
+
+
+
+
+    <script>
+        let side = [];
+        const URLend = "concert"
+        const endpoint = `http://ariadna.dk/kea/JazzByHeart/wp/wp-json/wp/v2/${URLend}`;
+
+        let side2 = [];
+        const URLend2 = "music_page?slug=music"
+        const endpoint2 = `http://ariadna.dk/kea/JazzByHeart/wp/wp-json/wp/v2/${URLend2}`;
+
+
+
+        let filter = "Upcoming";
+        let filter2 = "Previous";
+        const container = document.querySelector(".upcoming_concerts");
+        const container2 = document.querySelector(".previous_concerts");
+
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+            hentData();
+            hentData2();
+
+            console.log("start");
+
+        }
+
+        /************* script der henter wordpress som JSON data fra vores concerts pod ********/
+
+        async function hentData() {
+            const response = await fetch(endpoint);
+            side = await response.json();
+            console.log(side);
+            showConcerts();
+            showPreviousConcerts();
+        }
+
+        /************* script der henter wordpress som JSON data fra vores music pod (kun splash billede) ********/
+
+        async function hentData2() {
+            const response2 = await fetch(endpoint2);
+            side2 = await response2.json();
+            console.log(side2);
+            showElement();
+        }
+
+
+        /************* script der kloner koncerter med kategorien upcoming og sætter dem ind i en .upcoming_concerts ********/
+
+
+        function showConcerts() {
+
+            console.log(side);
+            container.innerHTML = "";
+            const template = document.querySelector("#template");
+
+            side.forEach(ting => {
+
+                if (filter == ting.upcoming_previous) {
+
+
+                    const clon = template.cloneNode(true).content;
+
+                    clon.querySelector(".band_name").textContent = ting.band_name;
+                    clon.querySelector(".concert_place").textContent = ting.location;
+                    clon.querySelector(".concert_time").textContent = ting.date_time;
+
+
+                    container.appendChild(clon);
+                }
+            });
+
+        }
+
+
+        /************* script der kloner koncerter med kategorien upcoming og sætter dem ind i en .previous_concerts ********/
+
+        function showPreviousConcerts() {
+
+            console.log(side);
+            container2.innerHTML = "";
+            const template = document.querySelector("#template");
+
+            side.forEach(ting => {
+
+                if (filter2 == ting.upcoming_previous) {
+
+
+                    const clon = template.cloneNode(true).content;
+
+                    clon.querySelector(".band_name").textContent = ting.band_name;
+                    clon.querySelector(".concert_place").textContent = ting.location;
+                    clon.querySelector(".concert_time").textContent = ting.date_time;
+
+
+                    container2.appendChild(clon);
+                }
+            });
+
+        }
+
+
+        /************* script der indsætter splash billede fra music pod ********/
+
+        function showElement() {
+            side2.forEach(element => {
+                document.querySelector(".splash_img").src = element.splash_img2.guid;
+
+
+            })
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jazz By Heart | Projects- Xperimotion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vocal jazz, Country jazz, Experimental jazz. Jazz for the senses, the traditional, and the daring. Jazz By Heart is a duo who dare to span many genres.">
+    <meta name="keywords" content="Vocal jazz, Country jazz, Experimental jazz">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,500;0,600;1,200&family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="JBH-favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="JBH-favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="JBH-favicon/favicon-16x16.png">
+    <link rel="manifest" href="JBH-favicon/site.webmanifest">
+    <link rel="mask-icon" href="JBH-favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="JBH-favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="JBH-favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" async></script>
+
+    <style>
+        .active {
+
+            border-bottom: 2px solid #D99236;
+            margin-left: 8vw;
+        }
+
+        .content_wrap {
+            padding-top: 6vh;
+        }
+
+        .container {
+            margin-top: 8vh;
+        }
+
+        .song_container h3 {
+            padding-bottom: 1vh;
+        }
+
+
+        iframe {
+            width: 82vw;
+            height: 26vh;
+            margin-left: 3vw;
+            margin-bottom: 8vh;
+        }
+
+
+        .song_wrap,
+        .GW_song_wrap {
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            flex-wrap: wrap;
+            margin-bottom: 10vh;
+        }
+
+        .song_list,
+        .GW_song_list {
+            display: flex;
+            flex-wrap: wrap;
+            /*
+            align-self: center;
+            justify-content: center;
+*/
+        }
+
+        .song_name,
+        .GW_song_name {
+            margin-left: 2vw;
+        }
+
+
+        audio {
+            width: 80vw;
+            margin-bottom: 2vh;
+            margin-top: -2vh;
+        }
+
+
+        /*---------------------------MEDIA QUERY 360px-----------------------*/
+
+        @media only screen and (min-width: 360px) {}
+
+        /*---------------------------MEDIA QUERY 375px-----------------------*/
+
+
+        @media only screen and (min-width: 375px) {}
+
+        /*---------------------------MEDIA QUERY 414px-----------------------*/
+
+        @media only screen and (min-width: 414px) {}
+
+
+        /*---------------------------MEDIA QUERY 600px-----------------------*/
+
+        @media only screen and (min-width: 600px) {
+
+            audio {
+                width: 42vw;
+                margin-bottom: 1vh;
+                margin-top: -1vh;
+            }
+
+            article:nth-child(2n) {
+                margin-left: 2vw;
+            }
+        }
+
+        /*---------------------------MEDIA QUERY 760px-----------------------*/
+
+        @media only screen and (min-width: 760px) {
+
+            iframe {
+                width: 84vw;
+                height: 36vh;
+                margin-left: 2vw;
+                margin-bottom: 14vh;
+            }
+
+            .text {
+                width: 70vw;
+                margin-bottom: 6vh;
+            }
+
+            .button {
+                font-size: 1.3rem;
+            }
+
+            article:nth-child(2n) {
+                margin-left: 4vw;
+            }
+
+        }
+
+
+
+
+        /*---------------------------MEDIA QUERY 900px-----------------------*/
+
+        @media only screen and (min-width: 900px) {
+            iframe {
+                height: 50vh;
+            }
+        }
+
+        /*---------------------------MEDIA QUERY 1000px-----------------------*/
+
+        @media only screen and (min-width: 1000px) {
+
+            audio {
+                width: 36vw;
+            }
+
+            article:nth-child(2n) {
+                margin-left: 8vw;
+            }
+
+            .button_container {
+                margin-top: 4vh;
+            }
+
+            .button_container,
+            .container {
+                margin-left: 4vw;
+                margin-right: 4vw;
+
+            }
+
+            iframe {
+                width: 76vw;
+            }
+        }
+
+        /*---------------------------MEDIA QUERY 1100px-----------------------*/
+
+        @media only screen and (min-width: 1100px) {
+
+            iframe {
+                width: 70vw;
+                height: 50vh;
+                margin-left: 4vw;
+                margin-bottom: 14vh;
+                margin-top: 4vh;
+            }
+
+
+
+            .text {
+                margin-bottom: 10vh;
+                width: 60vw;
+            }
+
+            .container {
+                margin-bottom: 16vh;
+            }
+
+
+        }
+
+        /*---------------------------MEDIA QUERY 1200px-----------------------*/
+
+        @media only screen and (min-width: 1200px) {
+
+            iframe {
+                height: 54vh;
+            }
+
+            audio {
+                width: 30vw;
+            }
+
+            .song_wrap,
+            .GW_song_wrap {
+                margin-left: 6vw;
+                width: 90vw;
+            }
+
+
+        }
+
+        /*---------------------------MEDIA QUERY 1300px-----------------------*/
+
+        @media only screen and (min-width: 1300px) {
+
+            .song_wrap,
+            .GW_song_wrap {
+                margin-left: 3vw;
+            }
+
+
+            .button_container,
+            .container {
+                margin-left: 1vw;
+            }
+
+            iframe {
+                height: 50vh;
+                width: 59vw;
+                margin-left: 6vw;
+            }
+        }
+
+        /*---------------------------MEDIA QUERY 1400px-----------------------*/
+
+        @media only screen and (min-width: 1400px) {
+
+            .song_wrap,
+            .GW_song_wrap {
+                margin-left: 0vw;
+                width: 90vw;
+            }
+        }
+
+        /*---------------------------MEDIA QUERY 1500px-----------------------*/
+
+        @media only screen and (min-width: 1500px) {
+
+            .button_container,
+            .container {
+                margin-left: 2vw;
+            }
+
+            iframe {
+                height: 58vh;
+                margin-left: 3vw;
+            }
+
+            .container {
+                width: 90vw;
+            }
+
+            .text {
+                width: 50vw;
+            }
+
+            .song_wrap,
+            .GW_song_wrap {
+                margin-left: 0vw;
+            }
+
+            article:nth-child(2n) {
+                margin-left: 6vw;
+            }
+        }
+
+
+        /*---------------------------MEDIA QUERY 1600px-----------------------*/
+
+        @media only screen and (min-width: 1600px) {}
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <header>
+
+
+
+        <nav>
+            <div id="logo">
+                <a href="index.html"><img src="static_img/logo.svg" title="Forside" alt="logo" class="logo"></a>
+            </div>
+
+
+
+            <div id="burgermenu" class="burgermenu_visibility">
+                <div id="burgermenu_knap"></div>
+                <ul id="burgermenu_background" class="hidden">
+
+                    <a href="index.html">Home</a>
+                    <a href="music.html">Music</a>
+                    <a class="selected" href="projects.html">Projects</a>
+                    <a href="concerts.html">Concerts</a>
+                    <a href="about.html">About</a>
+
+                </ul>
+            </div>
+
+            <div id="desktop_menu" class="desktopmenu_visibility">
+
+
+                <a href="index.html">Home</a>
+                <a href="music.html">Music</a>
+                <a class="selected" href="projects.html">Projects</a>
+                <a href="concerts.html">Concerts</a>
+                <a href="about.html">About</a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <section>
+
+        <div class="splash">
+            <img class="splash_img">
+        </div>
+
+
+        <div class="red_container">
+
+            <div class="content_wrap notskew">
+
+                <div class="button_container">
+                    <a class="button" href="projects.html">Gillian Welch Project</a>
+                    <a class="active button" href="projects_xper.html">Xperimotion</a>
+                </div>
+
+                <div class="container">
+
+                    <div class="text col">
+                        <h2 class="header_2"></h2>
+                        <p class="paragraph_2"></p>
+                    </div>
+
+                    <div class="song_wrap">
+
+                        <div class="song_list">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="black_container">
+            <div class="content_wrap notskew">
+                <div class="container">
+
+
+
+                    <div class="image col">
+                        <div class="video_2"></div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <template id="template">
+            <article class="song_container">
+
+                <h3 class="song_name"></h3>
+                <audio controls src="" class="song">
+                </audio>
+
+            </article>
+        </template>
+
+
+
+
+
+    </section>
+
+    <footer>
+        <div class="footer_txt">
+            <h2>Contact</h2>
+            <p><a href="mailto:JazzByHeart@gmail.com">Email: JazzByHeart@gmail.com</a></p>
+            <p>Karin Juhl - Vocal <br>
+                Tel: +45 20108890</p>
+            <p>Daniel Van Kranendonk - Guitar <br>
+                Tel: +45 21248898</p>
+        </div>
+
+
+    </footer>
+
+
+
+
+
+
+
+    <script>
+        let side = [];
+        const URLend = "projects_page?slug=projects"
+        const endpoint = `http://ariadna.dk/kea/JazzByHeart/wp/wp-json/wp/v2/${URLend}`;
+
+
+
+        let sideSongs = [];
+        const URLendSongs = "music?per_page=100"
+        const endpointSongs = `http://ariadna.dk/kea/JazzByHeart/wp/wp-json/wp/v2/${URLendSongs}`;
+
+        let filter = "xperimotion";
+        const container = document.querySelector(".song_list");
+
+
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+            hentData();
+            hentDataSongs();
+            console.log("start");
+
+        }
+
+        /************* script der henter wordpress som JSON data ********/
+
+        async function hentData() {
+            const response = await fetch(endpoint);
+            side = await response.json();
+            console.log(side);
+            showElement();
+        }
+
+
+
+
+        /************* script der vælger hvilke dele af JSON som skal sættes ind i hvilke tags ********/
+
+        function showElement() {
+            side.forEach(element => {
+                document.querySelector(".splash_img").src = element.splash_img.guid;
+
+                document.querySelector(".video_2").innerHTML = element.xper_video;
+                document.querySelector(".header_2").textContent = element.xper_header;
+                document.querySelector(".paragraph_2").textContent = element.xper_text;
+
+
+
+
+            })
+
+        }
+
+
+
+        /******************* script til xperimotion songs ******************************/
+
+
+        async function hentDataSongs() {
+            const responseSongs = await fetch(endpointSongs);
+            sideSongs = await responseSongs.json();
+            console.log(sideSongs);
+            showSongs();
+        }
+
+
+
+
+        function showSongs() {
+
+            console.log(sideSongs);
+            container.innerHTML = "";
+            const template = document.querySelector("#template");
+
+            sideSongs.forEach(ting => {
+
+                if (filter == ting.genre) {
+
+
+                    const clon = template.cloneNode(true).content;
+
+                    clon.querySelector(".song_name").textContent = ting.title.rendered;
+                    clon.querySelector(".song").src = ting.song.guid;
+
+
+                    container.appendChild(clon);
+
+
+                }
+            });
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
